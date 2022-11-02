@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="container">
+    <div class="phone">
+      <header class="phone-header">
+        <div class="chevron chevron-back"><span class="sr-only">Go back</span></div>
+        <div class="contact-info">
+          <img class="avatar" src="./images/avatar.jpg" alt="person avatar">
+          <div>
+            <p class="name">Samuel Green</p>
+            <small class="status">Available to Walk</small>
+          </div>
+        </div>
+        <div class="menu">
+          <span class="sr-only">Menu</span>
+          <span class="menu-dot"></span>
+          <span class="menu-dot"></span>
+          <span class="menu-dot"></span>
+        </div>
+      </header>
+      <div class="phone-main">
+        <div class="phone-messages">
+          <div class="message their-message">That sounds great. I'd be happy to discuss more.</div>
+          <div class="message their-message">Could you send over some pictures of your dog, please?</div>
+          <div class="message my-message message-photos">
+            <img class="message-img" src="./images/dog-image-1.jpg" alt="dog">
+            <img class="message-img" src="./images/dog-image-2.jpg" alt="dog">
+            <img class="message-img" src="./images/dog-image-3.jpg" alt="dog">
+          </div>
+          <div class="message my-message">Here are a few pictures. She's a happy girl!</div>
+          <div class="message my-message">Can you make it?</div>
+          <div class="message their-message">She looks so happy! The time we discusse works. How long shall I take her
+            out
+            for?</div>
+          <div class="message their-message their-message-choice">
+            <input type="radio" name="walking-time" id="choice1">
+            <label for="choice1">30 minute walk</label>
+            <strong class="price">$29</strong>
+          </div>
+          <div class="message their-message their-message-choice">
+            <input type="radio" name="walking-time" id="choice2">
+            <label for="choice2">1 hour walk</label>
+            <strong class="price">$49</strong>
+          </div>
+        </div>
+        <div class="phone-input-field">
+          <input type="text" name="message" placeholder="Type a message...">
+          <button class="btn-send">
+            <div class="chevron chevron-send"><span class="sr-only">Send message</span></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <h1>Simple booking</h1>
+      <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangemenets and
+        make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>
